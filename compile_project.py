@@ -15,6 +15,8 @@ def Get_bin_file_path():
     return ""
 
 def main():
+    print "Compilation started"
+    
     # Compile project
     compilation_res = call(["mbed", "compile", "-t", COMPILE_TOOLCHAIN, "-m", COMPILE_TARGET])
     if compilation_res != 0:
